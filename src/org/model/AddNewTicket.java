@@ -12,7 +12,7 @@ public class AddNewTicket {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String user = "scott";
 			String password = "TIGER";
-			String url = "jdbc:oracle:thin:@localhost:1521:orcl";	
+			String url = "jdbc:oracle:thin:@192.168.0.139:1521:orcl";	
 			con = DriverManager.getConnection(url, user, password);
 			//String query = "{call create_ticket(?,?,?,?,?,?,?,?,?,?,?,?,?)}";
 			String query = "{call create_ticket(?, ?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}";
@@ -30,7 +30,9 @@ public class AddNewTicket {
 			cstmt.setString(11,tb.getTicketStatus());
 			cstmt.setString(12,tb.getGroupTicketID());
 			cstmt.setString(13,tb.getCreatedBY());
+			System.out.println("Before Exe");
 			cstmt.execute();
+			System.out.println("After Exe");
 			String tid = cstmt.getString(1);
 			return tid;
 

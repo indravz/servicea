@@ -23,7 +23,7 @@
 		ResultSet rs = null;
 		String user = "scott";
 		String password = "TIGER";
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		String url = "jdbc:oracle:thin:@192.168.0.139:1521:orcl";
 		String tid = request.getParameter("ticketid");
 		String cid = request.getParameter("custid");
 		String query = null;

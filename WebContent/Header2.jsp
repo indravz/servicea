@@ -7,16 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="sub-footer">
-					<div class="container">
-						<div class="row">
-							<p>Copyright 2015.<strong>Verizon</strong> All rights reserved <!-- by: <em>TorchTemplates</em> --></p>
-						</div>
-					</div>
-				</div>
+
 				
 
-				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+<!-- 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a> -->
 
 			</div>
 

@@ -29,7 +29,7 @@
 		ResultSet rs2 = null;
 		String user = "scott";
 		String password = "TIGER";
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		String url = "jdbc:oracle:thin:@192.168.0.139:1521:orcl";
 		try {
 			con = DriverManager.getConnection(url, user, password);
 			String query1 = "Select * from TICKET_INFORMATION where status = 'Open' and ticket_type = 'Single'";

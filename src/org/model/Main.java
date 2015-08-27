@@ -61,7 +61,7 @@ public class Main extends HttpServlet {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "scott", "TIGER");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.139:1521:orcl", "scott", "TIGER");
 			PreparedStatement ps = con.prepareStatement("select Group_Ticket_ID from Group_Ticket where Zipcode = ? and Trouble_Service=?");
 
 			ps.setString(1, zipcode);
@@ -97,7 +97,7 @@ public class Main extends HttpServlet {
 		}
 		
 		String CreatedBy = "Admin";
-		
+		//System.out.println(id+"\n" + TroubleServiceID+"\n" +  TroubleDescription+"\n" + TicketType+"\n" + Remarks+"\n" + Status);
 		TicketBean tb = new TicketBean(id,TroubleServiceID,TroubleDescription,TicketType,sd1, sd1, sd2, Remarks,DispositionID,Status,GroupID ,CreatedBy);
 		AddNewTicket adt = new AddNewTicket();
 		TicketID = adt.addTicket(tb);
@@ -124,18 +124,20 @@ public class Main extends HttpServlet {
 		
 		Message = Message + msg;
 		pw.println("<html>");
+		request.getRequestDispatcher("Header.jsp").include(request, response);
 		pw.println("<head>");
+		pw.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">");
 		pw.println("</head>");
 		pw.println("<body>");
-		
+		pw.println("<div class=\"layout\">");
 		pw.println("<h3>"+Message+"</h3>");
-		pw.println("</body>");
-		pw.println("</html>");
+		pw.println("</div>");
 		pw.println("<div align=\"center\">");
-		
-		
 		pw.println("<a href = \"http://localhost:8080/ServiceAssurance/ServiceAssurance.jsp\" ><input type=\"button\" value=\"Back\" class=\"vzbtn1\"></a>");
 		pw.println("</div>");
+		request.getRequestDispatcher("Header2.jsp").include(request, response);
+		pw.println("</body>");
+		pw.println("</html>");
 	}
 
 	/**

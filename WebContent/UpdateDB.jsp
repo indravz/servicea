@@ -1,9 +1,10 @@
-<%@page import="oracle.jdbc.OracleConnection.CommitOption"%>
+<%@page import="oracle.jdbc.driver.OracleDriver"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <jsp:include page="Header.jsp"></jsp:include>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -21,7 +22,7 @@
 		ResultSet rs = null;
 		String user = "scott";
 		String password = "TIGER";
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		String url = "jdbc:oracle:thin:@192.168.0.139:1521:orcl";
 		try {
 			con = DriverManager.getConnection(url, user, password);
 			String query1 = "update ticket_information set status = ? where ticket_id = ?";
