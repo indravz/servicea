@@ -22,33 +22,45 @@
 					<nav class="responsive-menu">
 						<ul>
 							<li><a href="index-2.html">Home</a></li>
-							<li class="menu-item-has-children"><a href="#">Menu 1</a>
-								<ul class="sub-menu">
-									<li><a href="listing-2-columns.html">List 1</a></li>
-									<li><a href="listing-3-columns.html">List 2</a></li>
-									<li><a href="listing-4-columns.html">List 3</a></li>
-								</ul>
-							</li>
-							<li class="menu-item-has-children"><a href="#">Menu 2</a>
-								<ul class="sub-menu">
-									<li><a href="blog.html">List 1</a></li>
-									<li><a href="blog-grid.html">List 2</a></li>
-									<li><a href="single-post.html">List 3</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">About Us</a></li>
-							<li class="menu-item-has-children"><a href="#">Service Assurance</a>
+									<li><a href='index-2A.html'> <!--Class="has-submenu" -->Ordering </a>
+<!-- 										<ul class="sub-menu"> -->
+<!-- 											<li><a href="listing-2-columns.html">List 1</a></li> -->
+<!-- 											<li><a href="listing-3-columns.html">List 2</a></li> -->
+<!-- 											<li><a href="listing-4-columns.html">List 3</a></li> -->
+<!-- 										</ul> -->
+									</li>
+									<li><a href="#" >Product</a>
+<!-- 										<ul class="sub-menu"> -->
+<!-- 											<li><a href="blog.html">List 1</a></li> -->
+<!-- 											<li><a href="blog-grid.html">List 2</a></li> -->
+<!-- 											<li><a href="single-post.html">List 3</a></li> -->
+<!-- 										</ul> -->
+									</li>
+									
+									<li><a href="about.html">Provisioning</a></li>
+									<li class="menu-item-has-children"><a href="#">Service Assurance</a>
 								<ul class="sub-menu">
 									<li><a href="AddTicket.jsp">Generate Ticket</a></li>
 									<li><a href="RetrieveDetails.jsp">Review Ticket</a></li>
+									
 								</ul>
-							</li>
-							<li><a href="contact.html">Log Out</a></li>
+										
+									</li>
+									<li ><a href="#">Business Intelligence</a>
+<!-- 								<ul class="sub-menu"> -->
+<!-- 									<li><a href="single-car.html">List 1</a></li> -->
+<!-- 									<li><a href="single-car-2.html">List 2</a></li> -->
+<!-- 									<li><a href="shortcodes.html">List 3</a></li> -->
+<!-- 								</ul> -->
+								</li>
+								<li><a href="#" >Billing</a>				
+									<li><a href="contact.html" style="color:red;">Log Out</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</nav>
+
 
 	</div>
 

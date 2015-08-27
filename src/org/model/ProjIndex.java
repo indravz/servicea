@@ -118,8 +118,8 @@ public class ProjIndex extends HttpServlet {
 
 
 							//"<table class=\"vztable1\">" +
-							"<tr><td>Trouble Service</td> <td>" +
-							"<div  class = \"select-style\"><select id='TID' name='TID'>" +
+							"<tr><td>Trouble Service:</td> <td align=\"center\">" +
+							"<select id='TID' name='TID' class=\"select-style\">" +
 							"<option value='' disabled selected >Select Trouble Service</option>"
 							+
 							"<option value='1'>Voice</option>" +
@@ -128,32 +128,32 @@ public class ProjIndex extends HttpServlet {
 							"<option value=\"4\">Bundles</option>" +
 							"<option value=\"5\">Wireless</option>" +
 							"<option value=\"6\">Enterprise</option>" +
-							"</select></div>" +
+							"</select>" +
 							"</td> </tr>" +
 
-					 "<tr> <td>Trouble Description</td><td>"
+					 "<tr> <td>Trouble Description:</td><td>"
 					 +"<input type='text' id='Trouble Description' value='' placeholder=\"Trouble Description\" class=\"vztext\" name='Trouble Description'>"
 					 + "</td> </tr>" +
-					 "<tr> <td>Trouble Shoot</td><td>" +"<input type=\"button\" class=\"vzbtn1small\" name=\"Ping Device\" value=\"Ping\" onclick=\"Ping()\"/>"
+					 "<tr> <td>Trouble Shoot:</td><td>" +"<input type=\"button\" class=\"vzbtn1small\" name=\"Ping Device\" value=\"Ping\" onclick=\"Ping()\"/>"
 					 + "&nbsp;&nbsp&nbsp" +"<input type=\"button\" class=\"vzbtn1small\" name=\"Reboot Device\" value=\"Reboot\" onclick=\"Reboot()\"/>"
 
 					 + "</td> </tr>" +
 
-					 "<tr> <td>Disposition Type</td><td>" +
-					 "<select id='Disposition' name='Disposition'>" +
+					 "<tr> <td>Disposition Type:</td><td>" +
+					 "<select id='Disposition' name='Disposition' class='select-style'>" +
 					 "<option value='' disabled selected >Select Disposition</option>"
 					 +
-					 "<option value='1'>Closed Out</option>" +
+					 "<option value='1'>Closed Out:</option>" +
 					 "<option value='2'>Tech Dispatch</option>" +
 					 "<option value='3'>Hardware Mail</option>" +
 					 "</select>" +
 					 "</td> </tr>" +
 
-					 "<tr> <td>Closure Comments</td><td>"
+					 "<tr> <td>Closure Comments:</td><td>"
 					 +"<textarea id='Closure Comments' rows=\"5\" cols=\"25\" class=\"vztextarea\" placeholder=\"Closure Comments\" name ='Remarks' >"
 					 +"</textarea>" + "</td> </tr>" +
 
-					 "<tr> <td>Status</td><td>"
+					 "<tr> <td>Status:</td><td>"
 					 +"<input type=\"radio\" id=\"rb1\" name=\"status\" value ='open' ><label for=\"rb1\">Open</label>"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
 					 +"<input type=\"radio\"  id=\"rb2\" name=\"status\" value ='close'><label for=\"rb2\">Closed</label>"
 					 + "</td> </tr>" +

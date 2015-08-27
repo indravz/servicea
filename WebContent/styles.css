@@ -911,10 +911,10 @@ color: #080808;
 }
 .select-style {
     /* border: 1px solid #ccc; */
-    width: 120px;
+    width: 250px;
     border-radius: 3px;
     overflow: hidden;
-    background:  url("menu-icon.png") no-repeat 90% 50%;
+/*     background:  url("menu-icon.png") no-repeat 90% 50%; */
 	background-color:#d2d3d4;
 }
 
