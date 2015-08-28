@@ -79,7 +79,7 @@
     </target>
               	<target name="war" depends="build">
 
-              	              	              	           		<war destfile="reports.war">
+              	              	              	           		<war destfile="reports.war" webxml="WebContent/WEB-INF/web.xml">
 
               	              	              	           			<fileset dir="WebContent"/>
 
